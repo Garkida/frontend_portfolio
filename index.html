@@ -1,0 +1,263 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Garkida</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6d2584a8f4.js" crossorigin="anonymous"></script>
+ </head>
+
+
+ <body> 
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="IMAGES/logo.png" class="logo"> 
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a></li>
+                 <li> <a href="#about">About</a></li>
+                 <li> <a href="#services">Services</a></li>
+                <li> <a href="#porfolio">portfolio</a></li>
+                 <li> <a href="#contact">contact</a></li>
+                 
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+        </nav>
+        <div class="header-text">
+        
+            <h1>Hi, I'm <span>Joseph</span> Hassan <span>Garkida </span>  <br>From Nigeria</h1>
+             <p class="Title">Full Stack Eng. <br> AI/ML Researcher. <br>B.Sc. Software Engineering </p>
+
+        </div>
+    </div> 
+
+</div>   
+<!----------------about.---------------->
+<div id="about">
+    <div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="IMAGES/user.jpg" >
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am a passionate full stack engineering student and Django developer focused on building practical web applications. I have experience developing student management systems with student and tutor dashboards, course registration, payment integration, attendance tracking, user authentication, profile management, and role-based access. I enjoy building user-focused solutions while growing my skills in frontend development, backend development, databases, and APIs.</p>
+
+
+
+            <div class="tab-titles">
+                <P class="tab-links active-link" onclick="opentab('skills')">skills</P>
+                <P class="tab-links" onclick="opentab('experience')">experience</P>
+                <P class="tab-links" onclick="opentab('Education')">Education</P>
+                <P class="tab-links" onclick="opentab('Stacks')">Stacks i use</P>
+            </div>
+
+            <div class="tab-contents active-tab"  id="skills">
+                <ul>
+                    <li><span>UI/UX</span> <br> Creating clean, consistent, and easy-to-use interfaces and dashboards</li>
+                    <li><span>Frontend Development</span> <br> Building responsive and user-friendly interfaces</li>
+                    <li><span>Backend Development</span> <br> Developing server-side functionality</li>
+                    <li><span>API Development & Integration</span> <br> Creating API endpoints and integrating external services such as payment gateways.</li>
+                    <li><span>User Authentication & Authorization</span> <br> Building secure login systems, role-based access, email verification, and password recovery.</li>
+                    <li><span>AI/ML Development</span> <br> Learning to integrate artificial intelligence and machine learning solutions into web applications.</li>
+                </ul>
+
+            </div>
+            
+            <div class="tab-contents" id="experience"> 
+            
+                <ul>
+                    <li><span>freelancing  </span> <br> 2023 - date </li>
+                    <li><span>volunteer as HTML/css tutor</span> <br> 2021 - 2023 </li>
+                    <li><span>internship(Greyhubb Academy)</span> <br> 2025/2026</li>
+            
+                </ul>
+
+            </div>
+
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>B.Sc. Software Engineering</span> <br> Nigerian Army university Biu (NAUB) <br> 2027</li>
+                    <li><span>AI FUNDAMENTAL/ Promt Engineering</span> <br>BAFAI ACADEMY <br>2026</li>
+                    <li><span>Backend Development</span> <br>Grey Academy <br>2026</li>
+                    <li><span>frontend Development</span> <br>Grey Academy <br>2025</li>
+                    <li><span>SSCE</span> <br>Godiya International school <br>2020</li>
+                </ul>
+
+            </div>
+            <div class="tab-contents" id="Stacks">
+                <ul>
+                    <li><span>HTML/CSS</span>  </li>
+                    <li><span>JAVA SCRIPT</span>  </li>
+                    <li><span>BOOTSRAP</span>  </li>
+                    <li><span>REACT FRAMEWORK</span>  </li>
+                    <li><span>PYTHON</span>  </li>
+                    <li><span>DJANGO FRAMEWORK</span>  </li>
+                    <li><span>REST API</span>  </li>
+                    
+                </ul>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</div>
+<!-- ---------------------services-------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-utility fa-semibold fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Building responsive and user-friendly web applications using modern technologies and frameworks.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+            <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Creating clean, consistent, and easy-to-use interfaces and dashboards for web applications.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h2>AI/ML Integration</h2>
+                <p>Learning to integrate artificial intelligence and machine learning solutions into web applications.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ------------------------my work---------------------- -->
+<div id="portfolio">
+    <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div id="work-list">
+                <div class="work">
+                    <img src="IMAGES/work-1.png" alt="Work 1">
+                    <div class="layer">
+                       <h3>Student Management System</h3> 
+                       <p>Developed a comprehensive student management system with features such as student and tutor dashboards, course registration, payment integration, attendance tracking, user authentication, profile management, and role-based access.</p>
+                       <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="IMAGES/work-2.png" alt="Work 2">
+
+                         <div class="layer">
+                       <h3>Student Management System</h3> 
+                       <p>Developed a comprehensive student management system with features such as student and tutor dashboards, course registration, payment integration, attendance tracking, user authentication, profile management, and role-based access.</p>
+                       <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="IMAGES/work-3.png" alt="Work 3">
+                    <div class="layer">
+                       <h3>Student Management System</h3> 
+                       <p>Developed a comprehensive student management system with features such as student and tutor dashboards, course registration, payment integration, attendance tracking, user authentication, profile management, and role-based access.</p>
+                       <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <a href="#" class="btn">See more</a>
+
+
+    </div>
+</div>
+<!-- ------------------contact------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>garkiga@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+234 813 123 4567</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="IMAGES/my-cv.pdf" download  class="btn btn2">dowmload cv</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2 ">Send Message</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+           
+        </div>
+    </div>
+    <div class="copyright">
+        <p> © 2026 Joseph Garkida | Full Stack Engineer & AI/ML Researcher</p> 
+    </div>
+</div>  
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<<script>
+    var sidemenu = document.getElementById("sidemenu");
+    var menubtn = document.querySelector("nav .fa-bars");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+        menubtn.style.visibility = "hidden";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+        menubtn.style.visibility = "visible";
+    }
+
+
+    const msg = document.getElementById("msg")
+
+
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        msg.innerHTML = "Message sent successfully!";
+        msg.style.color = "#61b752";
+        setTimeout(function(){
+            msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+    });
+
+    form.
+</script>
+
+ </body> 
+ </html>   
+ 
